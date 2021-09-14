@@ -8,7 +8,7 @@ class OutputPromoController {
   async store(req, res) {
     try {
 
-      fs.readFileSync(path.resolve(__dirname, "..","..","files","upload.csv"), 'utf-8');
+      fs.readFileSync(path.resolve(__dirname, "..","..","files","upload.csv"), 'utf-8')
 
       let csvJSON = await csv().fromFile(path.resolve(__dirname, "..","..","files","upload.csv"));
 
