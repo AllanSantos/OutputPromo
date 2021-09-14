@@ -21,5 +21,9 @@
   },
   "devDependencies": {
     "sucrase": "^3.20.1"
+  },
+  "engines": {
+    "node": "14.17.0",
+    "npm": "6.14.13"
   }
 }
