@@ -1,12 +1,12 @@
 {
-  "name": "TesteJSON",
+  "name": "output_promo",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "node dist/server.js",
-    "dev": "nodemon src/server.js",
-    "dev:debug": "nodemon --inspect src/server.js",
+    "dev": "nodemon dist/server.js",
+    "dev:debug": "nodemon --inspect dist/server.js",
     "build": "sucrase ./src -d ./dist --transforms imports"
   },
   "dependencies": {
