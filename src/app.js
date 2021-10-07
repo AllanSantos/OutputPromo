@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import routes from './routes';
-import timeout from 'connect-timeout'
+var timeout = require('connect-timeout');
 
 class App {
   constructor() {
