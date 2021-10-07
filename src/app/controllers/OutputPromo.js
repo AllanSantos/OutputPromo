@@ -6,7 +6,6 @@ import XlsxPopulate from 'xlsx-populate';
 
 class OutputPromoController {
   async store(req, res) {
-    req.setTimeout(500000);
     try {
 
       fs.readFileSync(path.resolve(__dirname, "..","..","files","upload.csv"), 'utf-8')

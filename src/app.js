@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import path from 'path';
 import routes from './routes';
+import timeout from 'connect-timeout'
 
 class App {
   constructor() {
@@ -12,6 +13,7 @@ class App {
   }
 
   middlewares() {
+    this.server.use(timeout('60s'))
     this.server.use(cors());
     this.server.use(express.json());
   }
