@@ -13,7 +13,7 @@ class App {
   }
 
   middlewares() {
-    this.server.use(timeout('60s'))
+    this.server.use(timeout('30s'))
     this.server.use(cors());
     this.server.use(express.json());
   }
