@@ -2,7 +2,6 @@
 var _cors = require('cors'); var _cors2 = _interopRequireDefault(_cors);
 var _path = require('path'); var _path2 = _interopRequireDefault(_path);
 var _routes = require('./routes'); var _routes2 = _interopRequireDefault(_routes);
-var _connecttimeout = require('connect-timeout'); var _connecttimeout2 = _interopRequireDefault(_connecttimeout);
 
 class App {
   constructor() {
@@ -13,7 +12,6 @@ class App {
   }
 
   middlewares() {
-    this.server.use(_connecttimeout2.default.call(void 0, '60s'))
     this.server.use(_cors2.default.call(void 0, ));
     this.server.use(_express2.default.json());
   }
