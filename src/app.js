@@ -13,7 +13,12 @@ class App {
   }
 
   middlewares() {
-    this.server.use(timeout('5s'))
+    this.server.use(timeout(120000));
+    this.server.use(haltOnTimedout);
+
+    function haltOnTimedout(req, res, next){
+      if (!req.timedout) next();
+    }
     this.server.use(cors());
     this.server.use(express.json());
   }
