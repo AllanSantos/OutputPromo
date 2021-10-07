@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node --optimize_for_size --max_old_space_size=81920 dist/server.js",
+    "start": "node --optimize_for_size --max_old_space_size=163840 dist/server.js",
     "dev": "nodemon dist/server.js",
     "dev:debug": "nodemon --inspect dist/server.js",
     "build": "sucrase ./src -d ./dist --transforms imports"
