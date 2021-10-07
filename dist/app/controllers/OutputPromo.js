@@ -6,6 +6,7 @@ var _xlsxpopulate = require('xlsx-populate'); var _xlsxpopulate2 = _interopRequi
 
 class OutputPromoController {
   async store(req, res) {
+    req.setTimeout(500000);
     try {
 
       _fs2.default.readFileSync(_path2.default.resolve(__dirname, "..","..","files","upload.csv"), 'utf-8')
